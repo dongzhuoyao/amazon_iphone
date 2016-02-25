@@ -11,6 +11,11 @@
  cd amazon_iphone
  scrapy crawl amazon_iphone
  ```
+ 最后在新增一个crontab,每隔一个小时执行一次:
+ 执行 contab -e
+ ```shell
+0  * * * *  sh /path/to//scrapyTimer.sh
+ ```
 
 # 依赖
 

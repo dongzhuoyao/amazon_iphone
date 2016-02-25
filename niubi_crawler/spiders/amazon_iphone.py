@@ -60,6 +60,8 @@ class AmazonIphoneSpider(scrapy.Spider):
             port = 465
             sender = 'yourqqemail'
             pwd = 'yourqqemailsecuritypassword'#使用qq邮箱的安全密码
+            if not isinstance(title,unicode):
+                title = unicode(title)           
 
             msg = MIMEText(body, 'html')
             msg['subject'] = title

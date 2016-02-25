@@ -10,6 +10,7 @@
  git clone https://github.com/dongzhuoyao/amazon_iphone
  cd amazon_iphone
  scrapy crawl amazon_iphone
+ ```
 
 # 依赖
 
